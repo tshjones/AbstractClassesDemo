@@ -10,6 +10,22 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
+
+            List<Vehicle> list = new List<Vehicle>();
+
+            Car sedan = new Car() {Make="Toyota",Model="Sierra",Year=1999 };
+            Vehicle tricycle = new Motorcycle() { Make = "tricycle", Model = "Honda", HasSideCar = false  };
+            Vehicle sixWheel = new Car() {Make="Chevy", Model="truck" };
+            Vehicle harley = new Motorcycle() { Make = "Harley", Model="Thunder",Year=2009 };
+
+            list.Add(sedan);
+            list.Add(tricycle);
+            list.Add(sixWheel);
+            list.Add(harley);
+            foreach (var item in list)
+            {
+                Console.WriteLine(item.ToString());   
+            }
             /*
              * Todo follow all comments!! 
              */
